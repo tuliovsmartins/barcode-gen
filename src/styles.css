@@ -1,0 +1,116 @@
+@media print {
+    @page {
+        size: 110mm 21mm !important; 
+        margin: 0 !important;
+    }
+    .container {
+        display: none;
+    }
+    .printDoc {
+        display: none;
+    }
+    .paper{
+        display: block;
+        margin: 0mm 
+    }
+    .stick {
+        display: block;
+    }
+    .site {
+        display: block;
+    }
+    .size {
+        display: block;
+    };
+    .model {
+        display: block;
+    }
+}
+.paper {
+    position: absolute;
+    width: 122mm;
+ 
+}
+
+  .stick {
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    width:33mm;
+	height:21mm;
+    line-height: 1pt;
+    float: left;
+    margin-top: 1.5mm;
+    margin-left: 3mm;
+    margin-right: 3mm;
+  }
+
+  .size {
+    position: absolute;
+    right: 18px;
+    bottom: 20px;
+    font-family: sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+
+  }
+  
+  .model {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    top:-6px;
+  }
+
+  .site {
+    top:1px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 15px;
+    margin: 10px auto;
+    float: right;
+  }
+  
+  .csv-input {
+    padding: 10px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  .container p {
+    padding-top: 10px;
+    color: #666;
+  }
+
+  .printDoc {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 15px;
+  }
+
+  .exportCsv {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
