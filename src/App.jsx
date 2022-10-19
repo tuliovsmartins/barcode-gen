@@ -15,9 +15,12 @@ export default () => {
   const [exportCsv, setexportCsv] = useState(false);
 
   function adequanome(elemento) {
-    let nome = elemento.replace(/[eiu]/gi,'');
-    if(nome.legth > 30) {
-      nome = nome.replace(/[o]/gi,'');
+    let nome = elemento;
+    if(nome) {
+      nome = nome.replace('marquinha-','mrq ');
+      nome = nome.replace('biquini-','bqn ');
+      nome = nome.replace('-',' ');
+      nome = nome.replace(/[ou]/gi,'');
     }
     return nome;
   }
@@ -41,12 +44,12 @@ export default () => {
     if (element[10] === "" || element[10] === undefined) {
         if(element[9] === undefined) { element[9] = "0.0" }
         element[9] = ajustaValores(element[9]);
-        if(element[0].length > 30) { data[index][0] = adequanome(element[0]); }
+        if(element[0].length > 17) { data[index][0] = adequanome(element[0]); }
         barcode = "789" + element[9].replace(".","") + element[29];
         data[index][17] = barcode;
     } else {
         element[10] = ajustaValores(element[10]);
-        if(element[0].length > 30) { data[index][0] = adequanome(element[0])}
+        if(element[0].length > 17) { data[index][0] = adequanome(element[0])}
         barcode = "789" + element[10].replace(".","") + element[29];
         data[index][17] = barcode;
       }
@@ -62,7 +65,7 @@ export default () => {
         {
         csvdata.map((value, index)=> (
           <div key={index} className="stick">
-             <BarCode width={1} height={40} fontSize={10} value={value[17]}/>
+             
              <span className="size">{value[4]}</span>
              <div className="model">{value[0]}</div>
              <div className="site">{site}</div>
