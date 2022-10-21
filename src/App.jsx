@@ -61,7 +61,6 @@ export default () => {
     name = "";
     size = "";
   });
-  console.log(data)
   setCsvData(data);
   setPrint(true);
   setexportCsv(true);
