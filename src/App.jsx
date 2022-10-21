@@ -48,7 +48,7 @@ export default () => {
     }  else {
         delete data[index];
       }
-      if (size.length === 0 || size == "" || name.length === 0 || name == "") {
+      if (size === 'undefined' || size == "") {
         delete data[index];
     }
     name = "";
