@@ -29,7 +29,7 @@
 .paper {
     position: absolute;
     width: 122mm;
-    margin-top: 25px
+    margin-top: 35px
  
 }
 
@@ -41,6 +41,7 @@
 	  height:21mm;
     line-height: 1pt;
     float: left;
+    text-align: center;
     margin-top: 3mm;
     margin-left: 3mm;
     margin-right: 3mm;

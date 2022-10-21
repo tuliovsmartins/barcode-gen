@@ -16,7 +16,7 @@ export default () => {
 
   function adequanome(elemento) {
     let nome = elemento;
-    if(nome) {
+    if(nome.length > 17) {
       nome = nome.replace('marquinha-','mrq ');
       nome = nome.replace('biquini-','bqn ');
       nome = nome.replace('-',' ');
@@ -39,7 +39,7 @@ export default () => {
     setCsvDatah(data[0]);
     data.splice(0, 1);
     data.map((element, index) => {
-    setSite("www.rivieramodapraia.com.br")
+    setSite("www.somarquinha.com.br")
     let name = element[0];
     let size = element[4];
     if (name.includes('slim') || name.includes('tradicional') || name.includes('chemise') ) {
