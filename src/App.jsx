@@ -42,8 +42,16 @@ export default () => {
     setSite("www.somarquinha.com.br")
     let name = element[0];
     let size = element[4];
-    if (name.includes('slim') || name.includes('tradicional') || name.includes('chemise') ) {
+    let i = 1;
+    if (name.includes('slim') || name.includes('tradicional') || name.includes('chemise') || name.includes('ibiza') ) {
         if(name.length > 17) { data[index][0] = adequanome(name); }
+        if (element[15] > 0) {
+          for (i == 1; i < element[15]; i++) {
+            data.push(element);
+          }
+        } else {
+          delete data[index];
+        }
     }  else {
         delete data[index];
       }
@@ -53,6 +61,7 @@ export default () => {
     name = "";
     size = "";
   });
+  console.log(data)
   setCsvData(data);
   setPrint(true);
   setexportCsv(true);
