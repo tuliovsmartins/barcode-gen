@@ -36,23 +36,23 @@ export default () => {
   }
   
   function handleForce(data, fileinfo) {
-    let barcode;
+    console.log('iniciei o handle')
     setCsvDatah(data[0]);
     data.splice(0, 1);
     data.map((element, index) => {
     setSite("www.rivieramodapraia.com.br")
-    if (element[10] === "" || element[10] === undefined) {
-        if(element[9] === undefined) { element[9] = "0.0" }
-        element[9] = ajustaValores(element[9]);
-        if(element[0].length > 17) { data[index][0] = adequanome(element[0]); }
-        barcode = "789" + element[9].replace(".","") + element[29];
-        data[index][17] = barcode;
-    } else {
-        element[10] = ajustaValores(element[10]);
-        if(element[0].length > 17) { data[index][0] = adequanome(element[0])}
-        barcode = "789" + element[10].replace(".","") + element[29];
-        data[index][17] = barcode;
+    let name = element[0];
+    let size = element[4];
+    if (name.includes('slim') || name.includes('tradicional') || name.includes('chemise') ) {
+        if(name.length > 17) { data[index][0] = adequanome(name); }
+    }  else {
+        delete data[index];
       }
+      if (size.length === 0 || size == "" || name.length === 0 || name == "") {
+        delete data[index];
+    }
+    name = "";
+    size = "";
   });
   setCsvData(data);
   setPrint(true);

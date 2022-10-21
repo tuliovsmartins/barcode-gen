@@ -11,7 +11,7 @@
     }
     .paper{
         display: block;
-        margin: 0mm 
+        margin: 0mm;
     }
     .stick {
         display: block;
@@ -37,10 +37,10 @@
     font-family: sans-serif;
     text-align: center;
     width:33mm;
-	height:21mm;
+	  height:21mm;
     line-height: 1pt;
     float: left;
-    margin-top: 1.5mm;
+    margin-top: 3mm;
     margin-left: 3mm;
     margin-right: 3mm;
   }
