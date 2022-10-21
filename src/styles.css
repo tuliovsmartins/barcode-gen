@@ -29,6 +29,7 @@
 .paper {
     position: absolute;
     width: 122mm;
+    margin-top: 20px
  
 }
 
@@ -61,7 +62,7 @@
     font-size: 12px;
     display: flex;
     justify-content: center;
-    top:-35px;
+    top:-30px;
   }
 
   .site {

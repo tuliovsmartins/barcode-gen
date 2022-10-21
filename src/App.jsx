@@ -36,7 +36,6 @@ export default () => {
   }
   
   function handleForce(data, fileinfo) {
-    console.log('iniciei o handle')
     setCsvDatah(data[0]);
     data.splice(0, 1);
     data.map((element, index) => {
