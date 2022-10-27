@@ -25,7 +25,7 @@
     }
     .size {
         display: block;
-        
+        page-break-before:always;
     };
     .model {
         display: block;
