@@ -20,7 +20,7 @@
     }
     .site {
       display: block;
-      
+      page-break-after: always;
     }
 
 }
