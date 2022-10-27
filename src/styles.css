@@ -27,54 +27,42 @@
     }
 }
 .paper {
-    position: absolute;
-    width: 122mm;
-    margin-top: 35px
- 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    width: 111mm;
+    
 }
 
   .stick {
-    position: relative;
-    font-family: sans-serif;
+    
     text-align: center;
+    font-family: sans-serif;
     width:33mm;
 	  height:21mm;
-    line-height: 1pt;
-    float: left;
-    text-align: center;
-    margin-top: 3mm;
-    margin-left: 3mm;
-    margin-right: 3mm;
+    max-height: 21mm;
   }
 
   .size {
-    position: relative;
-    justify-content: center;
-    bottom: 10px;
+
+    width:33mm;
+    margin-top: 2mm;
     font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
-
   }
   
   .model {
-    position: relative;
+    width:33mm;
     font-family: sans-serif;
     font-size: 12px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    top:-30px;
   }
 
   .site {
-    top:1px;
-    position: relative;
+    width:33mm;
     font-family: sans-serif;
     font-size: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
   }
 
   * {

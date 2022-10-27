@@ -12,7 +12,8 @@
     "react-csv-reader": "^3.1.2",
     "react-dom": "16.12.0",
     "react-papaparse": "^3.11.1",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-widgets": "^5.8.4"
   },
   "devDependencies": {
     "typescript": "3.8.3"
