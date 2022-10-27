@@ -17,11 +17,11 @@
     }
     .stick {
         display: block;
-        page-break-after: always;
+        
     }
     .site {
         display: block;
-        
+        page-break-after: always;
     }
     .size {
         display: block;
