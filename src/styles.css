@@ -2,7 +2,7 @@
     @page {
         size: 110mm 21mm !important; 
         margin: 0 !important;
-        page-break-after: always;
+        
     }
     .container {
         display: block;
@@ -21,15 +21,15 @@
     }
     .site {
         display: block;
-        page-break-after: always;
+        
     }
     .size {
         display: block;
-        page-break-after: always;
+        
     };
     .model {
         display: block;
-        page-break-after: always;
+        
     }
 }
 .paper {
