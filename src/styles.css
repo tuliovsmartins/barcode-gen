@@ -13,19 +13,16 @@
     .paper{
         display: block;
         margin: 0mm;
-        
+        page-break-after: always;
     }
     .stick {
         display: block;
-        
     }
     .site {
         display: block;
-        page-break-after: always;
     }
     .size {
         display: block;
-        page-break-before:always;
     };
     .model {
         display: block;
@@ -38,6 +35,8 @@
     justify-content:space-around ;
     align-items: center;
     width: 111mm;
+    height:21mm;
+    /* background-color: azure; */
     
 }
 
