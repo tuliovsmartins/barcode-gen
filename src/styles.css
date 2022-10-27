@@ -1,29 +1,10 @@
 @media print {
-    @page {
-        size: 110mm 21mm !important; 
-        margin: 0 !important;
-    }
-    .container {
-        display: block;
-    }
-    .printDoc {
-        display: block;
-    }
     .paper{
         display: block;
-        pageBreakBefore: 'always';
-    }
-    .stick {
-        display: block;
-    }
-    .site {
-        display: block;
-    }
-    .size {
-        display: block;
-    };
-    .model {
-        display: block;
+        size: 110mm 21mm !important; 
+        margin: 0 !important;
+        page-break-after: always;
+        
     }
 }
 .paper {
