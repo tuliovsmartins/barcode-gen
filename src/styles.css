@@ -1,28 +1,31 @@
 @media print {
-    .paper{
-        display: block;
+    @page {
         size: 110mm 21mm !important; 
         margin: 0 !important;
-        page-break-after: always;  
-        
+    }
+    .container {
+        display: block;
+    }
+    .printDoc {
+        display: block;
+    }
+    .paper{
+        display: block;
+        margin: 0mm;
+        page-break-after: always;
     }
     .stick {
-      display: block;
-      
-    }
-    .size {
-      display: block;
-      
-    }
-    .model {
-      display: block;
-      
+        display: block;
     }
     .site {
-      display: block;
-      
+        display: block;
     }
-
+    .size {
+        display: block;
+    };
+    .model {
+        display: block;
+    }
 }
 .paper {
     display: flex;
