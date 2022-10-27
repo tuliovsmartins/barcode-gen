@@ -6,6 +6,11 @@
         page-break-after: always;
         
     }
+    .stick {
+      display: block;
+      page-break-after: always;
+    }
+    
 }
 .paper {
     display: flex;
