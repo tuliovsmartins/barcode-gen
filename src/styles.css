@@ -10,7 +10,19 @@
       display: block;
       page-break-after: always;
     }
-    
+    .size {
+      display: block;
+      page-break-after: always;
+    }
+    .model {
+      display: block;
+      page-break-after: always;
+    }
+    .site {
+      display: block;
+      page-break-after: always;
+    }
+
 }
 .paper {
     display: flex;
