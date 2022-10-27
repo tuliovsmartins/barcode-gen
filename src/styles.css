@@ -13,7 +13,9 @@
     .paper{
         display: block;
         margin: 0mm;
-        page-break-after: always;
+    }
+    .row {
+      page-break-after: always;
     }
     .stick {
         display: block;
@@ -35,7 +37,7 @@
     justify-content:space-around ;
     align-items: center;
     width: 111mm;
-    height:21mm;
+    
     /* background-color: azure; */
     
 }
