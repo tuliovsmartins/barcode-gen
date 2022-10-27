@@ -3,7 +3,7 @@
         display: block;
         size: 110mm 21mm !important; 
         margin: 0 !important;
-        
+        page-break-after: always;  
         
     }
     .stick {
@@ -20,7 +20,7 @@
     }
     .site {
       display: block;
-      page-break-after: always;
+      
     }
 
 }
