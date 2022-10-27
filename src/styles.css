@@ -4,14 +4,14 @@
         margin: 0 !important;
     }
     .container {
-        display: none;
+        display: block;
     }
     .printDoc {
-        display: none;
+        display: block;
     }
     .paper{
         display: block;
-        margin: 0mm;
+        pageBreakBefore: 'always';
     }
     .stick {
         display: block;
@@ -40,8 +40,8 @@
     text-align: center;
     font-family: sans-serif;
     width:33mm;
-	  height:23mm;
-    max-height: 23mm;
+	  height:20mm;
+    max-height: 2omm;
   }
 
   .size {
